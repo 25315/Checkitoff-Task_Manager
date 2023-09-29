@@ -6,6 +6,33 @@
     <title>Checkitoff-TaskManager</title>
 </head>
 <body>
-    
+    <div class="Outer-box">
+        <h1> Login or Sign up in seconds </h1>
+        <h3> Use your email or another service to continue with Checkitoff (it's free)!</h3>
+        <div class="Sign-buttons">
+            <h2 class="Sign-button-google">Continue with Google</h2>
+            <h2 class="Sign-button-facebook">Continue with Facebook</h2>
+            <h2 class="Sign-button-facebook">Continue with Email</h2>
+            <h2 class="Sign-button-anotherway">Continue another way</h2>
+        </div>
+        <div>
+            <h3>
+                By continuing, you agree to Checkitoff's <a id="Terms_of_use" href="#">Terms of use.</a>  
+                Read our <a id="Privacy_policy" href="#"> Policy</a>.
+            </h3>
+        </div>
+    </div>
+
+    <script>
+        // change this to change link to Terms of use
+        var Terms_of_use_Link = "https://www.youtube.com/watch?v=HuC9YebfPMQ&list=PLIjdNHWULhPSZFDzQU6AnbVQNNo1NTRpd&index=16";
+        var termsLinkElement = document.getElementById("Terms_of_use");
+        termsLinkElement.href = Terms_of_use_Link;
+
+        // change this to change link to privacy policy
+        var Privacy_policy_link = "https://discord.com";
+        var Privacy_policy_link_element = document.getElementById("Privacy_policy");
+        Privacy_policy_link_element.href = Privacy_policy_link;
+    </script>
 </body>
 </html>
