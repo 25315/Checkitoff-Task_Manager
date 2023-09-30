@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'><link rel="stylesheet" href="./style.css">
     <title>Checkitoff-TaskManager</title>
 </head>
 <body>
     <div class="Outer-box">
-        <h1> Login or Sign up in seconds </h1>
-        <h3> Use your email or another service to continue with Checkitoff (it's free)!</h3>
-        <div class="Sign-buttons">
-            <h2 class="Sign-button-google">Continue with Google</h2>
-            <h2 class="Sign-button-facebook">Continue with Facebook</h2>
-            <h2 class="Sign-button-facebook">Continue with Email</h2>
-            <h2 class="Sign-button-anotherway">Continue another way</h2>
-        </div>
-        <div>
-            <h3>
-                By continuing, you agree to Checkitoff's <a id="Terms_of_use" href="#">Terms of use.</a>  
+        <div class="Inner-content">
+            <h1 class="Heading"> Login or Sign up in seconds </h1>
+            <h3 class="Tagline"> Use your email or another service to continue with Checkitoff (it's free)!</h3>
+            <div class="Link-buttons">
+                <button class="button-28" role="button"><a id="Link-button-google" href="#">Continue with Google</a></button>
+                <br>
+                <button class="button-28" role="button"><a id="Link-button-facebook">Continue with Facebook</a></button>
+                <br>
+                <button class="button-28" role="button"><a id="Link-button-email">Continue with Email</a></button>
+                <br>
+                <button class="button-28" role="button"><a id="Link-button-anotherway">Continue another way</a></button>
+            </div>
+            <h3 class="Rules">
+                By continuing, you agree to Checkitoff's <a id="Terms_of_use" href="#">Terms of use</a>.  
                 Read our <a id="Privacy_policy" href="#"> Policy</a>.
             </h3>
         </div>
@@ -33,6 +38,26 @@
         var Privacy_policy_link = "https://discord.com";
         var Privacy_policy_link_element = document.getElementById("Privacy_policy");
         Privacy_policy_link_element.href = Privacy_policy_link;
+
+        // change this to change link to google
+        var Link_button_google_link = "https://google.com";
+        var Link_button_google_element = document.getElementById("Link-button-google");
+        Link_button_google_element.href = Link_button_google_link;
+
+        // change this to change link to facebook
+        var Link_button_facebook_link = "https://example.com";
+        var Link_button_facebook_element = document.getElementById("Link-button-facebook");
+        Link_button_facebook_element.href = Link_button_facebook_link;
+
+        // change this to change link to email
+        var Link_button_email_link = "https://example.com";
+        var Link_button_email_element = document.getElementById("Link-button-email");
+        Link_button_email_element.href = Link_button_email_link;
+
+        // change this to change link to anotherway
+        var Link_button_anotherway_link = "https://example.com";
+        var Link_button_anotherway_element = document.getElementById("Link-button-anotherway");
+        Link_button_anotherway_element.href = Link_button_anotherway_link;
     </script>
 </body>
 </html>
