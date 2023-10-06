@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/home.css">
+    <link rel="stylesheet" href="./src/signin.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <video autoplay muted loop playsinline>
+            <source src="./video/home.mp4" type="video/mp4">
+            <!-- Add other video formats here (e.g., webm) -->
+        </video>
+        <div class="sides">
+            <img src="./images/company_logo.png" class="logo"></a>
+        </div>
+        <div class="sides"> <a href="#" class="menu"></a></div>
+        <div class="info">
+        <h4><a href="./signin.html"><h2>Get Started</h2></a></h4>
+            <h1 id="message"></h1>
+        </div>
+    </div>
+
+    <!-- start of type js -->
+
+    <!-- Element to contain animated typing -->
+    <span id="element"></span>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#message', {
+        strings: [
+        ' ^1100',
+        'In this rapidly changing world around you ^2000',
+        'Make the best out of your time^2000',
+        'Organise your daily routines^1000',
+        'Elevate your work game with task management^1000',
+        'Colaborate with other people^3000',
+        ],
+        typeSpeed: 1,
+        fadeout:false,
+        fadeOutClass: 'typed-fade-out',
+        fadeOutDelay: 10,
+        smartbackspace:false,
+        loop : true,
+        });
+    </script>
+
+    <!-- end of type js -->
+</body>
+</html>
